@@ -3,8 +3,8 @@ replicaCount: 1
 fullnameOverride: pharma-ui
 
 image:
-  repository: <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/pharma-ui
-  tag: v1.0.0
+  repository: 983971845821.dkr.ecr.us-east-1.amazonaws.com/pharma-ui # <AWS_ACCOUNT_ID>
+  tag: 2db3118 # v1.0.0
   pullPolicy: Always
 
 service:

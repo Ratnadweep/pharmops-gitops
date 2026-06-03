@@ -3,8 +3,8 @@ replicaCount: 1
 fullnameOverride: notification-service
 
 image:
-  repository: <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/notification-service
-  tag: v1.0.0
+  repository: 983971845821.dkr.ecr.us-east-1.amazonaws.com/notification-service # <AWS_ACCOUNT_ID>
+  tag: 2db3118 # v1.0.0
   pullPolicy: Always
 
 service:
@@ -58,7 +58,7 @@ configmap:
   SMTP_HOST: "smtp.example.com"
   SMTP_PORT: "587"
   EMAIL_FROM: "noreply-dev@example.com"
-  DB_HOST: <RDS_ENDPOINT>
+  DB_HOST: pharma-dev-postgres.cklu08qmysv6.us-east-1.rds.amazonaws.com # <RDS_ENDPOINT>
 
 envFrom:
   - secretRef:
